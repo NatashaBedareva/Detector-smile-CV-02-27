@@ -29,3 +29,13 @@ pip install -r requirements.txt
 ```bash
 python detect_smile.py <путь к изображению>
 ```
+
+## Параметры командной строки
+```bash
+python detect_smile.py image.jpg \
+    --scale 1.1 \          # Фактор масштабирования для детектора лиц
+    --neighbors 5 \        # Минимальное количество соседей для детектора лиц
+    --minsize 60 \         # Минимальный размер лица
+    --smile_neighbors 15 \ # Параметр для детектора улыбок
+    --save result.jpg      # Путь для сохранения результата
+```
