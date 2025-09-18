@@ -30,6 +30,13 @@ pip install -r requirements.txt
 python detect_smile.py <путь к изображению>
 ```
 
+Пример
+
+
+```bash
+python detect_smile.py smile.png
+```
+
 ## Параметры командной строки
 ```bash
 python detect_smile.py image.jpg \

@@ -147,19 +147,6 @@ def det_faces(path_image, scale=1.1, neighbors=5, minsize=60,
     faces = nms(faces)
 
     return faces
-''' 
-    print(f"Found {len(faces)} face(s).")
-    plt.imshow(rgb)
-    plt.title(f"Found {len(faces)} face(s) in {src_name}")
-    plt.axis("off")
-    plt.tight_layout()
-    plt.show()
 
-    # Сохранение изображения.
-    bgr = cv2.cvtColor(rgb, cv2.COLOR_RGB2BGR)
-    cv2.imwrite(args.save, bgr)
-    print(f"Saved result to {args.save}")
-
-'''
     
 
